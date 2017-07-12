@@ -1,0 +1,6 @@
+query SearchPosts($name: String) {
+    allPosts(filter: {description_contains: $name}) {
+        id,
+        description
+    }
+}
